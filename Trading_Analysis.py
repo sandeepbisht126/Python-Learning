@@ -22,13 +22,13 @@ browser.get('https://newtrade.sharekhan.com/skweb/trading/report/dashboard')
 login='body > div > div.row > div.col-md-5.col-xs-12 > div > loginpage > div > div > div > div > div > div > div.slide.ng-scope > div:nth-child(1) > form > md-input > span > input'
 WebDriverWait(browser, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR,login)))
 elem=browser.find_element_by_css_selector(login)
-elem.send_keys('pranitanegi23')
+elem.send_keys(<username>)
 elem.submit()
 #time.sleep(5)
 passwd='body > div > div.row > div.col-md-5.col-xs-12 > div > loginpage > div > div > div > div > div > div > div.slide.ng-scope > div > div:nth-child(1) > div:nth-child(1) > form > md-input > span > input'
 WebDriverWait(browser, 30).until(EC.presence_of_element_located((By.CSS_SELECTOR,passwd)))
 passw=browser.find_element_by_css_selector(passwd)
-passw.send_keys('Sandy@87')
+passw.send_keys(<password>)
 passw.submit()
 #time.sleep(5)
 mfbutton='#segmentActive > label:nth-child(2)'
